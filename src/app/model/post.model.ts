@@ -8,7 +8,7 @@ export class Post {
   description: String;
   image: String;
   date: Date;
-  likes: Like[];
+  // likes: Like[];
   likeCount: number;
   hasLiked: boolean;
 }

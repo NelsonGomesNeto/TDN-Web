@@ -76,7 +76,7 @@ export class PostComponent implements OnInit {
 
   toggleLike(post: Post, idx: number) {
     let like = new Like();
-    like.post = post;
+    like.to = post;
     this.postService.setLike(like).subscribe((newPost: Post) => {
       this.posts[idx] = newPost;
     });
